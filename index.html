@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Enviar, Carta, JavaScript">
+    <meta name="description" content="Interação de escrever uma mensagem na caixa de texto e essa mensagem ser exibida no centro da tela.">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Felipe Barros Gouveia Tomé">
+    <meta name="robots" content="index, all">
+
+    <!-- link css and fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Passe a mensagem</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="message">
+            <p>
+                <h3 style="text-align: center; font-weight: bold;">Passe a sua mensagem</h3>
+                <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);"></p>
+            </p>
+            <p>
+                <label for="message-input">Digite a sua mensagem.</label>
+                <br>
+                <button style="border-radius: 5px 0 0 5px;"><i class="far fa-envelope"></i></button><input id="message-input" type="text">
+            </p>
+            <p>
+                <button onclick="getMessage()">Enviar</button>
+            </p>
+            <div id="message-output" style="text-align: center; text-transform: uppercase; overflow: hidden;"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
